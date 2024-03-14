@@ -22,7 +22,7 @@ export default function Navbar() {
     function NavItem( {text, page} ) {
         return (
             <a href={page}>
-                <li className="px-2 cursor-pointer font-[700] duration-300 hover:text-accent">{text}</li>
+                <li className="px-2 cursor-pointer font-[500] duration-300 hover:text-accent">{text}</li>
             </a>
         )
     }
@@ -37,7 +37,6 @@ export default function Navbar() {
                     text-secondary mt-[8rem] text-[1.2rem]">
                         <NavItem text="Home" page=""></NavItem>
                         <NavItem text="Projects" page=""></NavItem>
-                        <NavItem text="FAQ" page=""></NavItem>
                         <NavItem text="About" page=""></NavItem>
                         <NavItem text="Contact" page=""></NavItem>
                     </ul>
@@ -54,16 +53,24 @@ export default function Navbar() {
 
             ):( 
 
-            <nav className="h-[6rem] flex justify-between items-center px-[2rem] tablet-s:h-[4rem]">
-                <img className="h-[3rem] cursor-pointer" src="favicon.ico"></img>
-                <ul className="flex flex-row items-center justify-center px-4 gap-x-8
-                text-primary text-[18px] laptop:text-[16px] laptop-s:text-[14px] tablet:text-[12px]">
-                    <NavItem text="Home" page=""></NavItem>
-                    <NavItem text="Projects" page=""></NavItem>
-                    <NavItem text="FAQ" page=""></NavItem>
-                    <NavItem text="About" page=""></NavItem>
-                    <NavItem text="Contact" page=""></NavItem>
+            <nav className="mx-auto items-center px-[2rem] py-[.8rem]
+            bg-secondary w-[60rem] rounded-[3rem] mt-[2rem] font-[600] relative">
+                <ul className="flex flex-row items-center justify-between px-[2rem]
+                text-background text-[1rem] relative">
+                    <div className="flex gap-x-[3rem]">
+                        <NavItem text="Home" page=""></NavItem>
+                        <NavItem text="Projects" page=""></NavItem>
+                    </div>
+
+                    <button className="text-secondary bg-background text-center right-50 px-[2rem] 
+                    py-[.5rem] rounded-[3rem]">My Resume</button>
+
+                    <div className="flex gap-x-[3rem]">
+                        <NavItem text="About" page=""></NavItem>
+                        <NavItem text="Contact" page=""></NavItem>
+                    </div>
                 </ul>
+                <div className="w-[60rem] h-[4rem] absolute bg-accent top-3 left-0 rounded-[3rem] z-[-1]"></div>
             </nav>
             )}
         </>
