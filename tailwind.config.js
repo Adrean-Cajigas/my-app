@@ -8,10 +8,10 @@ module.exports = {
   theme: {
 
     colors: {
-      primary: "#f2f5f2",    
-      secondary: "#202124",   
-      accent: "#69AAD3",  
-      background: "#131314"   
+      primary: "#563314",    
+      secondary: "#000000",   
+      accent: "#FEB273",  
+      background: "#FEFAE0"   
     },
 
     screens: {
