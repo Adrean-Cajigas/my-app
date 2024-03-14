@@ -9,7 +9,6 @@ export default function Navbar() {
     const [isMobile, setIsMobile] = useState(false);
     const [overlayVisible, setOverlayVisible] = useState(false);
     const toggleOverlay = () => setOverlayVisible(!overlayVisible);
-    const closeMobileMenu = () => setOverlayVisible(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -23,7 +22,7 @@ export default function Navbar() {
     function NavItem( {text, page} ) {
         return (
             <a href={page}>
-                <li className="px-2 cursor-pointer font-[700] font-[Outfit] duration-300 hover:text-accent">{text}</li>
+                <li className="px-2 cursor-pointer font-[700] duration-300 hover:text-accent">{text}</li>
             </a>
         )
     }
