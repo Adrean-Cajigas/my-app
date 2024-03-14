@@ -3,6 +3,9 @@ import { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export default function Navbar() {
 
@@ -53,24 +56,28 @@ export default function Navbar() {
 
             ):( 
 
-            <nav className="mx-auto items-center px-[2rem] py-[.8rem]
-            bg-secondary w-[60rem] rounded-[3rem] mt-[2rem] font-[600] relative">
-                <ul className="flex flex-row items-center justify-between px-[2rem]
+            <nav className="mx-auto items-center px-[3rem] py-[.8rem]
+            bg-secondary w-[60rem] rounded-[3rem] mt-[2rem] font-medium relative">
+                <ul className="flex flex-row items-center justify-between
                 text-background text-[1rem] relative">
                     <div className="flex gap-x-[3rem]">
                         <NavItem text="Home" page=""></NavItem>
                         <NavItem text="Projects" page=""></NavItem>
                     </div>
 
-                    <button className="text-secondary bg-background text-center right-50 px-[2rem] 
-                    py-[.5rem] rounded-[3rem]">My Resume</button>
+                    <button className="flex bg-background px-[2rem] py-[.5rem] rounded-[3rem] 
+                    items-center gap-2 hover:bg-[#EEEAD3] duration-200 ease-in-out">
+                        <div className="text-secondary font-semibold">My Resume</div>
+                        <FontAwesomeIcon icon={faDownload} className="text-secondary"></FontAwesomeIcon>
+                    </button>
+
 
                     <div className="flex gap-x-[3rem]">
                         <NavItem text="About" page=""></NavItem>
                         <NavItem text="Contact" page=""></NavItem>
                     </div>
                 </ul>
-                <div className="w-[60rem] h-[4rem] absolute bg-accent top-3 left-0 rounded-[3rem] z-[-1]"></div>
+                <div className="w-[60rem] h-[4rem] absolute bg-accent top-[.7rem] left-0 rounded-[3rem] z-[-1]"></div>
             </nav>
             )}
         </>

@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 *
 {
@@ -13,7 +13,6 @@ html
 {
   height: 100%;
   font-size: 1rem;
-  font-family: "Urbanist", sans-serif;
 }
 
 body
@@ -21,4 +20,7 @@ body
   margin: 0;
   padding: 0;
   background-color: #FEFAE0;
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
 }
+

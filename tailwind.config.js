@@ -24,6 +24,16 @@ module.exports = {
       'mobile-s': {'max': '340px'},       // 0px up to 340px
     },
 
+
+    fontWeight: {
+      thin:     '300',
+      normal:   '400',
+      medium:   '500',
+      semibold: '600',
+      bold:     '700',
+      thick:    '800',
+    },
+
     extend: {
       backgroundImage: {
       },
