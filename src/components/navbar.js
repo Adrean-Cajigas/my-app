@@ -21,10 +21,6 @@ export default function Navbar() {
       }, []);
 
       useEffect(() => {
-        const scrollThreshold = 0; 
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > scrollThreshold);
-        };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
