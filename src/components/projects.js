@@ -11,7 +11,7 @@ export default function Projects() {
 
     return(
 
-        <section className="bg-primary px-[6rem] py-[8rem] rounded-[6rem]">
+        <section className="bg-primary px-[6rem] py-[8rem] rounded-[6rem] z-[50]">
             <h2 className="font-bold text-background text-[2rem] mb-[4rem] px-[3rem]">My Projects</h2>
 
             <div className="px-[3rem] flex flex-col gap-y-[12rem]">

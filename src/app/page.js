@@ -15,17 +15,34 @@ export default function Home() {
 
   const [current, setCurrent] = useState(0);
   const [animationClass, setAnimationClass] = useState("");
+  const [isOnCooldown, setIsOnCooldown] = useState(false);
 
   const handleNext = () => {
-    setAnimationClass("animation-left");
-    setCurrent((prevCurrent) => (prevCurrent + 1) % imageDetails.length);
-    setTimeout(() => setAnimationClass(""), 600); // Reset animation class to allow it to be reapplied
+    if (isOnCooldown) return;
+    setIsOnCooldown(true); // Activate the cooldown
+    setAnimationClass("animation-left"); // Apply the left animation class
+    const nextIndex = (current + 1) % imageDetails.length;
+  
+    setCurrent(nextIndex);
+  
+    setTimeout(() => {
+      setAnimationClass(""); // Clear the animation class
+      setIsOnCooldown(false); // Deactivate the cooldown after the animation
+    }, 500); // This duration should match your CSS animation duration
   };
-
+  
   const handlePrev = () => {
-    setAnimationClass("animation-right");
-    setCurrent((prevCurrent) => (prevCurrent - 1 + imageDetails.length) % imageDetails.length);
-    setTimeout(() => setAnimationClass(""), 600); // Reset animation class to allow it to be reapplied
+    if (isOnCooldown) return;
+    setIsOnCooldown(true); // Activate the cooldown
+    setAnimationClass("animation-right"); // Apply the right animation class
+    const prevIndex = (current - 1 + imageDetails.length) % imageDetails.length;
+  
+    setCurrent(prevIndex);
+  
+    setTimeout(() => {
+      setAnimationClass(""); // Clear the animation class
+      setIsOnCooldown(false); // Deactivate the cooldown after the animation
+    }, 500); // This duration should match your CSS animation duration
   };
 
   return (
@@ -41,6 +58,7 @@ export default function Home() {
           onClick={handlePrev}
           className="text-primary text-[4rem] absolute bottom-20 left-[-1rem] 
           bg-[#FFFFFF] rounded-[100rem] cursor-pointer hover:text-[#41260F] duration-200 ease-in-out hover:scale-[1.1]"></FontAwesomeIcon>
+
           <FontAwesomeIcon 
           icon={faCircleChevronRight} 
           onClick={handleNext}
