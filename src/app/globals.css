@@ -25,3 +25,21 @@ body
   font-optical-sizing: auto;
 }
 
+@keyframes bounceLeft {
+  0% { opacity: 0; transform: translateX(10%); }
+  100% { opacity: 1; transform: translateX(0);  }
+}
+
+@keyframes bounceRight {
+  0% { opacity: 0; transform: translateX(-10%); }
+  100% {opacity: 1; transform: translateX(0); }
+}
+
+.animation-left {
+  animation: bounceLeft 0.5s ease forwards;
+}
+
+.animation-right {
+  animation: bounceRight 0.5s ease forwards;
+}
+
