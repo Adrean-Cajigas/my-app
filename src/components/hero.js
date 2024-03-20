@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 export default function Hero( { title, header, animationClass } ) {
 
     const [scrollStyle, setScrollStyle] = useState({});
+    const [leftTagsStyle, setLeftTagsStyle] = useState({});
+    const [rightTagsStyle, setRightTagsStyle] = useState({});
 
     useEffect(() => {
         const handleScroll = () => {
@@ -15,7 +17,23 @@ export default function Hero( { title, header, animationClass } ) {
             // Calculate dynamic font size, line height, and opacity based on the scroll position
             const fontSize = Math.min(7 + position / 200, maxFontSize);
             const lineHeight = Math.min(7 + position / 100, maxLineHeight);
-            const opacity = Math.min(0.1 + position / 1000, maxOpacity);
+            const opacity = Math.min(0.2 + position / 1000, maxOpacity);
+
+            const moveDistance = Math.max(position * 2, 50); 
+    
+            // Styles for moving left and right
+            const leftStyle = {
+                transform: `translateX(${-moveDistance}px)`, // Move left
+                transition: 'transform 1s ease-out',
+            };
+    
+            const rightStyle = {
+                transform: `translateX(${moveDistance}px)`, // Move right
+                transition: 'transform 1s ease-out',
+            };
+    
+            setLeftTagsStyle(leftStyle);
+            setRightTagsStyle(rightStyle);
     
             setScrollStyle({
                 fontSize: `${fontSize}rem`,
@@ -55,13 +73,13 @@ export default function Hero( { title, header, animationClass } ) {
             <div className="absolute w-[85%] right-0 left-0 bottom-5 mx-auto">
                 <div className="flex flex-col gap-y-[3rem]">
                     <div className="flex justify-between w-full text-secondary font-semibold text-[1.5rem] text-center">
-                        <p>Website<br></br>Developer</p>
-                        <p>UI/UX<br></br>Designer</p>
+                        <p style={leftTagsStyle}>Website<br></br>Developer</p>
+                        <p style={rightTagsStyle}>UI/UX<br></br>Designer</p>
                     </div>
 
                     <div className="flex justify-between w-full text-secondary font-semibold text-[1.5rem] text-center">
-                        <p>Full-time <br></br>College Student</p>
-                        <p>Part-time <br></br>Martial Artist</p>
+                        <p style={leftTagsStyle}>Part-time <br></br>Martial Artist</p>
+                        <p style={rightTagsStyle}>Full-time <br></br>College Student</p>
                     </div>
                 </div>
             </div>
