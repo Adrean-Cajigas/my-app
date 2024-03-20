@@ -1,4 +1,5 @@
 "use client"
+import Cover from "@/components/cover";
 import Image from "next/image";
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
@@ -47,8 +48,9 @@ export default function Home() {
 
   return (
     <>
+        <Cover></Cover>
         <Navbar></Navbar>
-      <div className="relative min-h-screen">
+      <div className="relative min-h-screen overflow-hidden">
       <Hero title={imageDetails[current].title} header={imageDetails[current].header} animationClass={animationClass} />
 
         <div className="absolute bottom-0 mx-auto right-0 left-0 select-none flex justify-center w-[45rem]">

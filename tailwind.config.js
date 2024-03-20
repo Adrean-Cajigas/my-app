@@ -35,7 +35,30 @@ module.exports = {
     },
 
     extend: {
-      backgroundImage: {
+      animation:
+      {
+        topCover: "opening 1.5s ease-in-out forwards 3.5s",
+        bottomCover: "opening 1.2s ease-in-out forwards 3.7s",
+        welcome: "translate 3.6s ease-in-out forwards .4s",
+        to: "translate 3s ease-in-out forwards .8s",
+      },
+
+      keyframes:
+      {
+        opening: {
+          "0%": {opacity: "1"},
+          "70%": {transform: "translateX(110vw)", opacity: "1"},
+          "100%": {transform: "translateX(110vw)", opacity: "0"},
+        },
+
+        translate: {
+          '0%': {opacity: '0', scale:"1"},
+          '20%': {opacity: '1', scale:"1.1"},
+          '75%': {opacity: '1', scale:"1.1"},
+          '90%': {opacity: '0', scale:"1.1"},
+          '100%': {opacity: '0', scale:"1.1", visibility: "hidden" },
+        },
+
       },
     },
   },

@@ -71,9 +71,9 @@ export default function Navbar() {
                         <NavItem text="Projects" page=""></NavItem>
                     </div>
 
-                    <button className="bg-background px-[2rem] py-[.5rem] rounded-[3rem] 
+                    <button className="bg-background rounded-[3rem] 
                     hover:bg-[#EEEAD3] duration-200 ease-in-out">
-                        <a className="flex items-center gap-2" href="/images/Adrean Cajigas Resume.pdf" target="_blank">
+                        <a className="flex items-center gap-2 px-[2rem] py-[.5rem]" href="/images/Adrean Cajigas Resume.pdf" target="_blank">
                             <div className="text-secondary font-semibold">My Resume</div>
                             <FontAwesomeIcon icon={faDownload} className="text-secondary"></FontAwesomeIcon>
                         </a>

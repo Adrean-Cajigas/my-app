@@ -14,7 +14,16 @@ config.autoAddCss = false
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en"
+    className="
+    monitor:text-[1.3rem]
+    laptop:text-[.85rem] 
+    laptop-s:text-[.75rem] 
+    tablet:text-[1.2vw]
+    tablet-s:text-[1rem]
+    mobile:text-[.85rem]
+    mobile-s:text-[.7rem]
+    ">
       <body className={inter.className}>{children}</body>
     </html>
   );

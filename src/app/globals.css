@@ -44,3 +44,45 @@ body
   animation: bounceRight 0.5s ease forwards;
 }
 
+@keyframes circleExpand {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+    border-radius: 50%;
+  }
+  50% {
+    width: 200vmax; /* Ensure it covers the whole screen regardless of aspect ratio */
+    height: 200vmax;
+    opacity: 1;
+    border-radius: 50%;
+  }
+  49% {
+    width: 200vmax; /* Ensure it covers the whole screen regardless of aspect ratio */
+    height: 200vmax;
+    opacity: 1;
+    border-radius: 50%;
+  }
+  50% {
+    width: 200vmax;
+    height: 200vmax;
+    opacity: 0;
+    border-radius: 50%;
+  }
+  100% {
+    width: 200vmax;
+    height: 200vmax;
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+.cover-circle {
+  background-color: #FEB273; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 150; 
+  animation: circleExpand 4s ease forwards;
+}
