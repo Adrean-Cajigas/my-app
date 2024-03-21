@@ -37,10 +37,10 @@ module.exports = {
     extend: {
       animation:
       {
-        topCover: "opening 1.5s ease-in-out forwards 3.5s",
-        bottomCover: "opening 1.2s ease-in-out forwards 3.7s",
-        welcome: "translate 3.6s ease-in-out forwards .4s",
-        to: "translate 3s ease-in-out forwards .8s",
+        topCover: "opening 1.8s ease-in-out forwards 1.8s",
+        bottomCover: "opening 1.5s ease-in-out forwards 2s",
+        welcome: "translate 2.2s ease-in-out forwards .4s",
+        to: "translate 1.8s ease-in-out forwards .8s",
       },
 
       keyframes:
