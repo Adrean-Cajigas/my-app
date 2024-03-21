@@ -58,9 +58,7 @@ export default function About () {
                 <Image width={500} height={500} alt="me" className="w-[37rem]" src="/images/me3.png"></Image>
                 <Image width={500} height={500} alt="me" className="w-[37rem]" src="/images/me4.png"></Image>
                 <Image width={500} height={500} alt="me" className="w-[37rem]" src="/images/me5.png"></Image>
-            </div>
-
-              
+            </div> 
         </section>
     )
 }
