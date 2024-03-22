@@ -6,6 +6,16 @@ export default function Hero( { title, header, animationClass } ) {
     const [scrollStyle, setScrollStyle] = useState({});
     const [leftTagsStyle, setLeftTagsStyle] = useState({});
     const [rightTagsStyle, setRightTagsStyle] = useState({});
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+          setIsMobile(window.innerWidth <= 1250);
+        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+      }, []);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -58,19 +68,32 @@ export default function Hero( { title, header, animationClass } ) {
         )}
 
     return(
-        <section className="relative">
+        <section className="relative container mx-auto">
             <h3 className="text-secondary font-bold text-[2.5rem] text-center pt-[8rem]">{header}</h3>
             <h1 className={`text-primary font-thick text-[7rem] text-center leading-[7rem] tracking-wide ${animationClass}`}>{title}</h1>
 
             <div className='z-[-1]'>
-                <Adrean></Adrean>
-                <Adrean></Adrean>
-                <Adrean></Adrean>
-                <Adrean></Adrean>
+
+                {isMobile ? (
+                    <>
+                        <Adrean></Adrean>
+                        <Adrean></Adrean>
+                        <Adrean></Adrean>
+                        <Adrean></Adrean>
+                        <Adrean></Adrean>
+                    </>
+                ) : (
+                    <>
+                        <Adrean></Adrean>
+                        <Adrean></Adrean>
+                        <Adrean></Adrean>
+                        <Adrean></Adrean>
+                    </>
+                )}
             </div>
 
 
-            <div className="absolute w-[85%] right-0 left-0 bottom-5 mx-auto">
+            <div className="absolute w-[85%] tablet:w-[80%] right-0 left-0 bottom-5 laptop-s:bottom-[5rem] mx-auto">
                 <div className="flex flex-col gap-y-[3rem]">
                     <div className="flex justify-between w-full text-secondary font-semibold text-[1.5rem] text-center">
                         <p style={leftTagsStyle}>Website<br></br>Developer</p>

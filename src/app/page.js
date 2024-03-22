@@ -6,6 +6,7 @@ import Hero from "@/components/hero";
 import Projects from "@/components/projects";
 import About from "@/components/about";
 import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 import imageDetails from "@/components/adrean";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -50,7 +51,7 @@ export default function Home() {
     <>
         <Cover></Cover>
         <Navbar></Navbar>
-      <div className="relative min-h-screen overflow-hidden">
+      <div className="relative min-h-screen overflow-hidden laptop-s:min-h-0">
       <Hero title={imageDetails[current].title} header={imageDetails[current].header} animationClass={animationClass} />
 
         <div className="absolute bottom-0 mx-auto right-0 left-0 select-none flex justify-center w-[45rem]">
@@ -77,7 +78,7 @@ export default function Home() {
       <Projects></Projects>
       <About></About>
       <Contact></Contact>
-
+      <Footer></Footer>
     </>
   );
 }

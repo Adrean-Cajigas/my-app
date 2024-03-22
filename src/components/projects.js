@@ -18,14 +18,15 @@ export default function Projects() {
 
     return(
 
-        <section className="bg-primary px-[6rem] py-[8rem] rounded-[6rem] z-[10]">
-            <h2 className="font-bold text-background text-[2rem] mb-[4rem] px-[3rem]">My Projects</h2>
+        <div className="bg-primary rounded-[4rem] z-[1]">
+            <section>
+            <h2 className="font-bold text-background text-[2rem] mb-[4rem] container mx-auto px-[9rem] pt-[8rem] laptop-s:px-[6rem]" >My Projects</h2>
 
-            <div className="px-[3rem] flex flex-col gap-y-[12rem]">
+            <div className="flex flex-col gap-y-[12rem] container mx-auto px-[9rem] pb-[8rem] laptop-s:px-[6rem]">
 
                 <div>
-                    <div className="flex items-end gap-[3rem] mb-[2rem]">
-                        <h1 className="text-accent font-bold text-[6rem] leading-[4.2rem]">Community A.L.I.</h1>
+                    <div className="flex items-end gap-[3rem] mb-[3rem]">
+                        <h1 className="text-accent font-bold text-[6rem] leading-[4.2rem] laptop-s:text-[5.5rem]">Community A.L.I.</h1>
 
                         <div className="flex gap-4">
                             <Button text="Visit Website" link="https://www.communityali.org/"></Button>
@@ -46,8 +47,8 @@ export default function Projects() {
 
 
                 <div>
-                    <div className="flex items-end gap-[3rem] mb-[2rem]">
-                            <h1 className="text-accent font-bold text-[6rem] leading-[4.2rem]">Club Application</h1>
+                    <div className="flex items-end gap-[3rem] mb-[3rem]">
+                            <h1 className="text-accent font-bold text-[6rem] leading-[4.2rem] laptop-s:text-[5.5rem]">Club Application</h1>
 
                             <div className="flex gap-4">
                                 <Button text="Visit Website" link="https://club-application-c15c28325e63.herokuapp.com/"></Button>
@@ -68,5 +69,7 @@ export default function Projects() {
               
             </div>
         </section>
+            
+        </div>
     )
 }
