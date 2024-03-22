@@ -14,7 +14,7 @@ export default function About () {
     }
 
     return(
-        <section className="px-[9rem] pt-[8rem] pb-[6rem] rounded-[6rem] container mx-auto max-w-[100rem] laptop-s:px-[6rem]">
+        <section className="px-[9rem] pt-[8rem] pb-[6rem] tablet-s:pt-[6rem] tablet-s:pb-[4rem] rounded-[6rem] container mx-auto max-w-[100rem] laptop-s:px-[6rem] tablet-s:px-[4rem]">
             <h2 className="font-bold text-secondary text-[2rem] mb-[3rem]">More About me</h2>
 
             <div className="flex gap-[12rem] laptop:gap-[6rem] mb-[4rem] items-start justify-between">
@@ -49,10 +49,10 @@ export default function About () {
                     </div>
                 </div>
 
-                <Image width={500} height={500} alt="me" className="w-[25rem]" src="/images/me1.png"></Image>
+                <Image width={500} height={500} alt="me" className="w-[25rem] tablet-s:hidden" src="/images/me1.png"></Image>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-[2rem] container mx-auto">
+            <div className="flex flex-wrap justify-center gap-[2rem] container mx-auto tablet-s:gap-[1rem]">
                 <Image width={500} height={500} alt="me" className="w-[48.5%]" src="/images/me2.png"></Image>
                 <Image width={500} height={500} alt="me" className="w-[48.5%]" src="/images/me3.png"></Image>
                 <Image width={500} height={500} alt="me" className="w-[48.5%]" src="/images/me4.png"></Image>

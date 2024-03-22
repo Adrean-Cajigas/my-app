@@ -20,13 +20,14 @@ export default function Projects() {
 
         <div className="bg-primary rounded-[4rem] z-[1]">
             <section>
-            <h2 className="font-bold text-background text-[2rem] mb-[4rem] container mx-auto px-[9rem] pt-[8rem] laptop-s:px-[6rem]" >My Projects</h2>
+            <h2 className="font-bold text-background text-[2rem] mb-[4rem] container mx-auto px-[9rem] pt-[8rem] laptop-s:px-[6rem] tablet-s:px-[4rem]" >My Projects</h2>
 
-            <div className="flex flex-col gap-y-[12rem] container mx-auto px-[9rem] pb-[8rem] laptop-s:px-[6rem]">
+            <div className="flex flex-col gap-y-[12rem] container mx-auto px-[9rem] pb-[8rem] laptop-s:px-[6rem] tablet-s:px-[4rem]">
 
                 <div>
-                    <div className="flex items-end gap-[3rem] mb-[3rem]">
-                        <h1 className="text-accent font-bold text-[6rem] leading-[4.2rem] laptop-s:text-[5.5rem]">Community A.L.I.</h1>
+                    <div className="flex items-end gap-[3rem] mb-[3rem] tablet-s:flex-wrap">
+                        <h1 className="text-accent font-bold text-[6rem] leading-[4.2rem] laptop-s:text-[5.5rem]
+                        tablet-s:text-[4rem]">Community A.L.I.</h1>
 
                         <div className="flex gap-4">
                             <Button text="Visit Website" link="https://www.communityali.org/"></Button>
@@ -34,21 +35,22 @@ export default function Projects() {
                         </div>
                     </div>
 
-                    <p className="text-background font-semibold text-[1.5rem]">An online community-based platform that revolutionizes the way colleges connect with their students. 
+                    <p className="text-background font-semibold text-[1.5rem] tablet-s:text-[1.2rem]">An online community-based platform that revolutionizes the way colleges connect with their students. 
                     <span className="text-[1rem] ml-[.5rem]">(2022)</span></p>
 
                     <div className="flex gap-5 mt-[4rem] flex-wrap">
                         <Image width={800} height={800} alt="Community A.L.I" className="w-[35rem]" src="/images/ali1.png"></Image>
                         <Image width={800} height={800} alt="Community A.L.I" className="w-[35rem]" src="/images/ali2.png"></Image>
-                        <Image width={800} height={800} alt="Community A.L.I" className="w-[35rem]" src="/images/ali3.png"></Image>
+                        <Image width={800} height={800} alt="Community A.L.I" className="w-[35rem]" src="/images/ali5.png"></Image>
                         <Image width={800} height={800} alt="Community A.L.I" className="w-[35rem]" src="/images/ali4.png"></Image>
                     </div>
                 </div>
 
 
                 <div>
-                    <div className="flex items-end gap-[3rem] mb-[3rem]">
-                            <h1 className="text-accent font-bold text-[6rem] leading-[4.2rem] laptop-s:text-[5.5rem]">Club Application</h1>
+                    <div className="flex items-end gap-[3rem] mb-[3rem] tablet-s:flex-wrap">
+                            <h1 className="text-accent font-bold text-[6rem] leading-[4.2rem] laptop-s:text-[5.5rem]
+                            tablet-s:text-[4rem]">Club Application</h1>
 
                             <div className="flex gap-4">
                                 <Button text="Visit Website" link="https://club-application-c15c28325e63.herokuapp.com/"></Button>
@@ -56,7 +58,7 @@ export default function Projects() {
                             </div>
                     </div>
 
-                    <p className="text-background font-semibold text-[1.5rem]">A user-friendly web application that streamlines club paperwork into a singular secure system.
+                    <p className="text-background font-semibold text-[1.5rem] tablet-s:text-[1.2rem]">A user-friendly web application that streamlines club paperwork into a singular secure system.
                     <span className="text-[1rem] ml-[.5rem]">(2024)</span></p>
 
                     <div className="flex gap-5 mt-[4rem] flex-wrap">

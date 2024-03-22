@@ -13,7 +13,7 @@ export default function Navbar() {
 
     useEffect(() => {
         const handleResize = () => {
-          setIsMobile(window.innerWidth <= 768);
+          setIsMobile(window.innerWidth <= 200);
         };
         handleResize();
         window.addEventListener("resize", handleResize);
@@ -38,9 +38,9 @@ export default function Navbar() {
     }
 
     return(
-        <div className={`sticky z-[100] transition-top duration-300 ${isScrolled ? 'top-0' : 'top-10'}`}>
+        <div className={`sticky z-[100] transition-top duration-300 tablet-s:top-0 ${isScrolled ? 'top-0' : 'top-10'}`}>
             {isMobile ? (
-            <nav className="h-[6rem] flex justify-between items-center px-[4vw] tablet-s:h-[4rem] sticky top-10 z-[100]">
+            <nav className="h-[6rem] w-[1rem] flex justify-between items-center px-[4vw] tablet-s:h-[4rem] sticky top-10 z-[100]">
                 <div className={`fixed top-0 bottom-0 z-10 bg-accent
                 duration-500 ease-in-out ${overlayVisible ? 'right-0' : '-right-[300px]'} w-[300px] mobile:w-[240px]`}>
                     <ul className="flex flex-col items-center justify-end px-4 gap-y-10 
@@ -61,11 +61,10 @@ export default function Navbar() {
             </nav>
 
             ):( 
-
             <nav className="absolute items-center px-[3rem] py-[.6rem] mx-auto right-0 left-0
-            bg-secondary w-[60rem] rounded-[3rem] tracking-wide">
+            bg-secondary w-[60rem] tablet-s:w-[100%] rounded-[3rem] tablet-s:rounded-t-none tracking-wide">
                 <ul className="flex flex-row items-center justify-between
-                text-background text-[1rem] relative">
+                text-background text-[1rem] tablet-s:text-[.9rem] relative">
                     <div className="flex gap-x-[3rem]">
                         <NavItem text="Home" page=""></NavItem>
                         <NavItem text="Projects" page=""></NavItem>
@@ -86,7 +85,8 @@ export default function Navbar() {
                     </div>
                 </ul>
 
-                <div className="w-[60rem] h-[3.5rem] absolute bg-accent top-[.7rem] right-0 left-0 rounded-[3rem] z-[-1]"></div>
+                <div className="w-[60rem] tablet-s:w-[100%] h-[3.5rem] absolute bg-accent top-[.7rem] tablet-s:top-[.5rem] 
+                right-0 left-0 rounded-[3rem] z-[-1] tablet-s:rounded-t-none"></div>
 
             </nav>
             )}

@@ -64,13 +64,13 @@ export default function Hero( { title, header, animationClass } ) {
     function Adrean() {
         return(
             <h1 style={scrollStyle} className="text-accent opacity-20 font-thick text-[7rem] text-center 
-            leading-[7rem] tracking-wide select-none z-[-1]">Adrean Cajigas</h1>
+            leading-[7rem] tracking-wide select-none z-[-1] tablet-s:text-[4.5rem]">Adrean Cajigas</h1>
         )}
 
     return(
         <section className="relative container mx-auto">
-            <h3 className="text-secondary font-bold text-[2.5rem] text-center pt-[8rem]">{header}</h3>
-            <h1 className={`text-primary font-thick text-[7rem] text-center leading-[7rem] tracking-wide ${animationClass}`}>{title}</h1>
+            <h3 className="text-secondary font-bold text-[2.5rem] text-center pt-[8rem] tablet-s:pt-[6rem] tablet-s:text-[2rem]">{header}</h3>
+            <h1 className={`text-primary font-thick text-[7rem] tablet-s:text-[4.5rem] text-center leading-[7rem] tablet-s:leading-[5rem] tracking-wide ${animationClass}`}>{title}</h1>
 
             <div className='z-[-1]'>
 
