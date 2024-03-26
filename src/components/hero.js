@@ -34,15 +34,15 @@ export default function Hero( { title, header, animationClass } ) {
                 return;
             }
             
-            const position = window.scrollY;
-            const maxFontSize = 10; 
-            const maxLineHeight = 11;
-            const maxOpacity = .5; 
+            // const position = window.scrollY;
+            // const maxFontSize = 10; 
+            // const maxLineHeight = 11;
+            // const maxOpacity = .5; 
     
-            // Calculate dynamic font size, line height, and opacity based on the scroll position
-            const fontSize = Math.min(7 + position / 200, maxFontSize);
-            const lineHeight = Math.min(7 + position / 100, maxLineHeight);
-            const opacity = Math.min(0.2 + position / 1000, maxOpacity);
+            // // Calculate dynamic font size, line height, and opacity based on the scroll position
+            // const fontSize = Math.min(7 + position / 200, maxFontSize);
+            // const lineHeight = Math.min(7 + position / 100, maxLineHeight);
+            // const opacity = Math.min(0.2 + position / 1000, maxOpacity);
 
             const moveDistance = Math.max(position * 2, 50); 
     

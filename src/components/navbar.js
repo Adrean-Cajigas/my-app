@@ -71,8 +71,13 @@ export default function Navbar() {
                     </div>
 
                     <div className="hidden mobile:flex gap-x-[3rem] text-[1.5rem]">
-                        <FontAwesomeIcon icon={faHouse} className="cursor-pointer"></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faDiagramProject} className="cursor-pointer"></FontAwesomeIcon>
+                        <a href="#home">
+                            <FontAwesomeIcon icon={faHouse} className="cursor-pointer"></FontAwesomeIcon>
+                        </a>
+
+                        <a href="#projects">
+                            <FontAwesomeIcon icon={faDiagramProject} className="cursor-pointer"></FontAwesomeIcon>
+                        </a>
                     </div>
 
                     <button className="bg-background rounded-[3rem] 
@@ -89,8 +94,13 @@ export default function Navbar() {
                     </div>
 
                     <div className="hidden mobile:flex gap-x-[3rem] text-[1.5rem]">
-                        <FontAwesomeIcon icon={faUser} className="cursor-pointer"></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faMessage} className="cursor-pointer"></FontAwesomeIcon>
+                        <a href="#about">
+                            <FontAwesomeIcon icon={faUser} className="cursor-pointer"></FontAwesomeIcon>
+                        </a>
+
+                        <a href="#contact">
+                            <FontAwesomeIcon icon={faMessage} className="cursor-pointer"></FontAwesomeIcon>
+                        </a>
                     </div>
                 </ul>
 

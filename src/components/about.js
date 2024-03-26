@@ -20,7 +20,7 @@ export default function About () {
             <div className="flex gap-[12rem] laptop:gap-[6rem] mb-[4rem] items-start justify-between">
                 <div className="flex flex-col max-w-[40rem] laptop:max-w-[50rem]">
                     <p className="font-medium text-secondary text-[1.2rem] leading-10 mb-[3rem] tablet-s:text-[1rem]">What excites me most about pursuing a career in software development is its profound impact on shaping the world around us. This has brought an 
-                    entrepreneurial aspect in my journey as a website developer. Since the pandemic, I've also grown a passion for creating meaningful solutions for 
+                    entrepreneurial aspect in my journey as a website developer. Since the pandemic, I have grown a passion for creating meaningful solutions for 
                     education, local businesses, and engaging in future opportunities.</p>
 
                     <div className="flex gap-4 mobile:gap-3 flex-wrap justify-start items-center mb-[4rem] laptop:pr-[2rem] mobile:pr-0">

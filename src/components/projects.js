@@ -18,7 +18,7 @@ export default function Projects() {
 
     return(
 
-        <div className="bg-primary rounded-[4rem] mobile:rounded-[3rem] mobile-s:rounded-[2rem] z-[1]" id="projects">
+        <div className="bg-primary rounded-[4rem] mobile:rounded-[3rem] mobile-s:rounded-[2rem] mobile-xs:rounded-none z-[1]" id="projects">
             <section>
             <h2 className="font-bold text-background text-[2rem] mb-[4rem] container mx-auto px-[9rem] pt-[8rem] laptop-s:px-[6rem] tablet-s:px-[4rem] mobile:px-[3rem] mobile-s:px-[2rem] mobile:pt-[6rem]" >My Projects</h2>
 

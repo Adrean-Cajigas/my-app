@@ -28,7 +28,7 @@ export default function Contact() {
 
     return (
         <section className="px-[6rem] tablet-s:px-[3.5rem] mobile:px-[2rem] mobile-s:px-[1.5rem] py-[8rem] tablet-s:py-[4rem] rounded-[6rem] container mx-auto" id='contact'>
-            <h2 className="font-semibold text-secondary text-center text-[3rem] tablet-s:text-[2rem] mb-[3rem] tablet-s:mb-[2rem] px-[3rem] tablet-s:px-0">
+            <h2 className="font-semibold text-secondary text-center text-[3rem] tablet-s:text-[2rem] mb-[3rem] tablet-s:mb-[2rem] px-[3rem] tablet-s:px-0 mobile-s:pt-[3rem]">
                 <span className="text-primary">Want to know more about me? </span> 
                 Let's talk!
             </h2>   
