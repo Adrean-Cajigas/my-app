@@ -55,17 +55,17 @@ export default function Home() {
       <Hero title={imageDetails[current].title} header={imageDetails[current].header} animationClass={animationClass} />
 
         <div className="absolute bottom-0 mx-auto right-0 left-0 select-none flex justify-center w-[45rem] tablet-s:w-[100%]">
-          <Image width={500} height={500} src="/images/half-circle.png" alt="half circle" className="relative w-[100%] tablet-s:w-[80%] right-0 left-0 mx-auto"></Image>
+          <Image width={500} height={500} src="/images/half-circle.png" alt="half circle" className="relative w-[100%] tablet-s:w-[80%] mobile:w-[85%] mobile-s:w-[90%] right-0 left-0 mx-auto"></Image>
           <FontAwesomeIcon 
           icon={faCircleChevronLeft} 
           onClick={handlePrev}
-          className="text-primary text-[4rem] absolute bottom-20 left-[-1rem] tablet-s:left-[4rem] tablet-s:text-[3.5rem]
+          className="text-primary text-[4rem] z-[50] absolute bottom-20 left-[-1rem] tablet-s:left-[4rem] mobile:left-[2.5rem] mobile-s:left-[2rem] tablet-s:text-[3.5rem]
           bg-[#FFFFFF] rounded-[100rem] cursor-pointer hover:text-[#41260F] duration-200 ease-in-out hover:scale-[1.1]"></FontAwesomeIcon>
 
           <FontAwesomeIcon 
           icon={faCircleChevronRight} 
           onClick={handleNext}
-          className="text-primary text-[4rem] absolute bottom-20 right-[-1rem] tablet-s:right-[4rem] tablet-s:text-[3.5rem]
+          className="text-primary text-[4rem] z-[50] absolute bottom-20 right-[-1rem] tablet-s:right-[4rem] mobile:right-[2.5rem] mobile-s:right-[2rem] tablet-s:text-[3.5rem]
           bg-[#FFFFFF] rounded-[100rem] cursor-pointer hover:text-[#41260F] duration-200 ease-in-out hover:scale-[1.1]"></FontAwesomeIcon>
         </div>
 

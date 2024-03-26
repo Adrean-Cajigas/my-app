@@ -18,16 +18,16 @@ export default function Projects() {
 
     return(
 
-        <div className="bg-primary rounded-[4rem] z-[1]">
+        <div className="bg-primary rounded-[4rem] mobile:rounded-[3rem] mobile-s:rounded-[2rem] z-[1]" id="projects">
             <section>
-            <h2 className="font-bold text-background text-[2rem] mb-[4rem] container mx-auto px-[9rem] pt-[8rem] laptop-s:px-[6rem] tablet-s:px-[4rem] mobile:px-[3rem] mobile:pt-[6rem]" >My Projects</h2>
+            <h2 className="font-bold text-background text-[2rem] mb-[4rem] container mx-auto px-[9rem] pt-[8rem] laptop-s:px-[6rem] tablet-s:px-[4rem] mobile:px-[3rem] mobile-s:px-[2rem] mobile:pt-[6rem]" >My Projects</h2>
 
-            <div className="flex flex-col gap-y-[12rem] tablet-s:gap-y-[10rem] container mx-auto px-[9rem] pb-[8rem] laptop-s:px-[6rem] tablet-s:px-[4rem] mobile:px-[3rem]">
+            <div className="flex flex-col gap-y-[12rem] tablet-s:gap-y-[10rem] container mx-auto px-[9rem] pb-[8rem] laptop-s:px-[6rem] tablet-s:px-[4rem] mobile:px-[3rem] mobile-s:px-[2rem]">
 
                 <div>
                     <div className="flex items-end gap-[3rem] tablet-s:gap-[2rem] mb-[3rem] tablet-s:flex-wrap">
                         <h1 className="text-accent font-bold text-[6rem] leading-[4.2rem] laptop-s:text-[5.5rem]
-                        tablet-s:text-[4rem]">Community A.L.I.</h1>
+                        tablet-s:text-[4rem] mobile-s:text-[3rem]">Community A.L.I.</h1>
 
                         <div className="flex gap-4">
                             <Button text="Visit Website" link="https://www.communityali.org/"></Button>
@@ -50,7 +50,7 @@ export default function Projects() {
                 <div>
                     <div className="flex items-end gap-[3rem] tablet-s:gap-[2rem] mb-[3rem] tablet-s:flex-wrap">
                             <h1 className="text-accent font-bold text-[6rem] leading-[4.2rem] laptop-s:text-[5.5rem]
-                            tablet-s:text-[4rem]">Club Application</h1>
+                            tablet-s:text-[4rem] mobile-s:text-[3rem]">Club Application</h1>
 
                             <div className="flex gap-4">
                                 <Button text="Visit Website" link="https://club-application-c15c28325e63.herokuapp.com/"></Button>

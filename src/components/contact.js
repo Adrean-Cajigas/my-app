@@ -27,7 +27,7 @@ export default function Contact() {
     };
 
     return (
-        <section className="px-[6rem] tablet-s:px-[3.5rem] mobile:px-[2rem] py-[8rem] tablet-s:py-[4rem] rounded-[6rem] container mx-auto ">
+        <section className="px-[6rem] tablet-s:px-[3.5rem] mobile:px-[2rem] mobile-s:px-[1.5rem] py-[8rem] tablet-s:py-[4rem] rounded-[6rem] container mx-auto" id='contact'>
             <h2 className="font-semibold text-secondary text-center text-[3rem] tablet-s:text-[2rem] mb-[3rem] tablet-s:mb-[2rem] px-[3rem] tablet-s:px-0">
                 <span className="text-primary">Want to know more about me? </span> 
                 Let's talk!
@@ -40,7 +40,7 @@ export default function Contact() {
                     and what I do is
                     <DynamicWidthInput type="text" value={adjective} onChange={(e) => setAdjective(e.target.value)} placeholder="occupation"/> 
                     You can reach me through 
-                    <DynamicWidthInput type="text" value={contactMethod} onChange={(e) => setContactMethod(e.target.value)} placeholder="contact method"/> so we can talk more about 
+                    <DynamicWidthInput type="text" value={contactMethod} onChange={(e) => setContactMethod(e.target.value)} placeholder="contact info"/> so we can talk more about 
                     <DynamicWidthInput type="text" value={talkAbout} onChange={(e) => setTalkAbout(e.target.value)} placeholder="topic"/>. If I were to rate your portfolio out of ten, I would rate it a
                     <DynamicWidthInput type="text" value={rating} onChange={(e) => setRating(e.target.value)} placeholder="1-10"/>. Thank you and I look forward to connecting with you soon!
                 </p>

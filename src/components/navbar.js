@@ -61,13 +61,13 @@ export default function Navbar() {
             </nav>
 
             ):( 
-            <nav className="absolute items-center px-[3rem] py-[.6rem] mx-auto right-0 left-0 mobile:py-[1rem]
-            bg-secondary w-[60rem] tablet-s:w-[100%] rounded-[3rem] tablet-s:rounded-t-none tracking-wide mobile:rounded-b-[2rem]">
+            <nav className="absolute items-center px-[3rem] mobile-s:px-[1rem] py-[.6rem] mx-auto right-0 left-0 mobile:py-[1rem] mobile-s:py-[1.5rem]
+            bg-secondary w-[60rem] tablet-s:w-[100%] rounded-[3rem] tablet-s:rounded-t-none tracking-wide mobile:rounded-b-[2rem] mobile-s:rounded-b-[1.5rem] mobile-xs:rounded-b-[1rem]">
                 <ul className="flex flex-row items-center justify-between mobile:justify-evenly
                 text-background text-[1rem] tablet-s:text-[.8rem] relative">
                     <div className="flex gap-x-[3rem] mobile:hidden">
-                        <NavItem text="Home" page=""></NavItem>
-                        <NavItem text="Projects" page=""></NavItem>
+                        <NavItem text="Home" page="#home"></NavItem>
+                        <NavItem text="Projects" page="#projects"></NavItem>
                     </div>
 
                     <div className="hidden mobile:flex gap-x-[3rem] text-[1.5rem]">
@@ -77,15 +77,15 @@ export default function Navbar() {
 
                     <button className="bg-background rounded-[3rem] 
                     hover:bg-[#EEEAD3] duration-200 ease-in-out mobile:mx-8">
-                        <a className="flex items-center gap-2 px-[2rem] py-[.5rem]" href="/images/Adrean Cajigas Resume.pdf" target="_blank">
+                        <a className="flex items-center gap-2 px-[2rem] mobile-s:px-[1.2rem] py-[.5rem]" href="/images/Adrean Cajigas Resume.pdf" target="_blank">
                             <div className="text-secondary font-semibold">My Resume</div>
-                            <FontAwesomeIcon icon={faDownload} className="text-secondary"></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={faDownload} className="text-secondary mobile-xs:hidden"></FontAwesomeIcon>
                         </a>
                     </button>
 
                     <div className="flex gap-x-[3rem] mobile:hidden">
-                        <NavItem text="About" page=""></NavItem>
-                        <NavItem text="Contact" page=""></NavItem>
+                        <NavItem text="About" page="#about"></NavItem>
+                        <NavItem text="Contact" page="#contact"></NavItem>
                     </div>
 
                     <div className="hidden mobile:flex gap-x-[3rem] text-[1.5rem]">

@@ -14,7 +14,7 @@ export default function About () {
     }
 
     return(
-        <section className="px-[9rem] pt-[8rem] pb-[6rem] tablet-s:pt-[6rem] tablet-s:pb-[4rem] rounded-[6rem] container mx-auto max-w-[100rem] laptop-s:px-[6rem] tablet-s:px-[4rem] mobile:px-[3rem]">
+        <section id="about" className="px-[9rem] pt-[8rem] pb-[6rem] tablet-s:pt-[6rem] tablet-s:pb-[4rem] rounded-[6rem] container mx-auto max-w-[100rem] laptop-s:px-[6rem] tablet-s:px-[4rem] mobile:px-[3rem] mobile-s:px-[2rem]">
             <h2 className="font-bold text-secondary text-[2rem] mb-[3rem] tablet-s:mb-[1.5rem]">More About me</h2>
 
             <div className="flex gap-[12rem] laptop:gap-[6rem] mb-[4rem] items-start justify-between">
@@ -23,7 +23,7 @@ export default function About () {
                     entrepreneurial aspect in my journey as a website developer. Since the pandemic, I've also grown a passion for creating meaningful solutions for 
                     education, local businesses, and engaging in future opportunities.</p>
 
-                    <div className="flex gap-4 mobile:gap-3 flex-wrap justify-start items-center mb-[4rem] laptop:pr-[2rem]">
+                    <div className="flex gap-4 mobile:gap-3 flex-wrap justify-start items-center mb-[4rem] laptop:pr-[2rem] mobile:pr-0">
                         <Button text="Javascript"></Button>
                         <Button text="Typescript"></Button>
                         <Button text="HTML"></Button>

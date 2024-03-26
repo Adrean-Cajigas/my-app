@@ -22,6 +22,7 @@ module.exports = {
       'tablet-s': {'max': '768px'},       // 480px up to 768px
       'mobile': {'max': '650px'},         // 340px up to 480px
       'mobile-s': {'max': '480px'},       // 0px up to 340px
+      'mobile-xs': {'max': '420px'},       // 0px up to 340px
     },
 
 

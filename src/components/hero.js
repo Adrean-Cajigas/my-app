@@ -79,13 +79,13 @@ export default function Hero( { title, header, animationClass } ) {
     function Adrean() {
         return(
             <h1 style={scrollStyle} className="text-accent opacity-20 font-thick text-[7rem] text-center 
-            leading-[7rem] tracking-wide select-none z-[-1] tablet-s:text-[4.5rem] tablet-s:leading-[6rem]">Adrean Cajigas</h1>
+            leading-[7rem] tracking-wide select-none z-[-1] tablet-s:text-[4.5rem] tablet-s:leading-[6rem] mobile-s:text-[4rem] mobile-xs:text-[3.4rem]">Adrean Cajigas</h1>
         )}
 
     return(
-        <section className="relative container mx-auto">
-            <h3 className="text-secondary font-bold text-[2.5rem] text-center pt-[8rem] tablet-s:pt-[6rem] mobile:pt-[7rem] tablet-s:text-[2rem]">{header}</h3>
-            <h1 className={`text-primary font-thick text-[7rem] tablet-s:text-[4.5rem] text-center leading-[7rem] tablet-s:leading-[5rem] tracking-wide ${animationClass}`}>{title}</h1>
+        <section className="relative container mx-auto" id='home'>
+            <h3 className="text-secondary font-bold text-[2.5rem] text-center pt-[8rem] tablet-s:pt-[6rem] mobile:pt-[7rem] mobile-s:pt-[9rem] tablet-s:text-[2rem]">{header}</h3>
+            <h1 className={`text-primary font-thick text-[7rem] tablet-s:text-[4.5rem] mobile-s:text-[4rem] mobile-xs:text-[3.4rem] text-center leading-[7rem] tablet-s:leading-[5rem] tracking-wide ${animationClass}`}>{title}</h1>
 
             <div className='z-[-1]'>
 
