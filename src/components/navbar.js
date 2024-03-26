@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark, faArrowDown, faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark, faArrowDown, faDownload, faHouse, faUser, faDiagramProject, faMessage} from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -61,32 +61,41 @@ export default function Navbar() {
             </nav>
 
             ):( 
-            <nav className="absolute items-center px-[3rem] py-[.6rem] mx-auto right-0 left-0
-            bg-secondary w-[60rem] tablet-s:w-[100%] rounded-[3rem] tablet-s:rounded-t-none tracking-wide">
-                <ul className="flex flex-row items-center justify-between
-                text-background text-[1rem] tablet-s:text-[.9rem] relative">
-                    <div className="flex gap-x-[3rem]">
+            <nav className="absolute items-center px-[3rem] py-[.6rem] mx-auto right-0 left-0 mobile:py-[1rem]
+            bg-secondary w-[60rem] tablet-s:w-[100%] rounded-[3rem] tablet-s:rounded-t-none tracking-wide mobile:rounded-b-[2rem]">
+                <ul className="flex flex-row items-center justify-between mobile:justify-evenly
+                text-background text-[1rem] tablet-s:text-[.8rem] relative">
+                    <div className="flex gap-x-[3rem] mobile:hidden">
                         <NavItem text="Home" page=""></NavItem>
                         <NavItem text="Projects" page=""></NavItem>
                     </div>
 
+                    <div className="hidden mobile:flex gap-x-[3rem] text-[1.5rem]">
+                        <FontAwesomeIcon icon={faHouse} className="cursor-pointer"></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faDiagramProject} className="cursor-pointer"></FontAwesomeIcon>
+                    </div>
+
                     <button className="bg-background rounded-[3rem] 
-                    hover:bg-[#EEEAD3] duration-200 ease-in-out">
+                    hover:bg-[#EEEAD3] duration-200 ease-in-out mobile:mx-8">
                         <a className="flex items-center gap-2 px-[2rem] py-[.5rem]" href="/images/Adrean Cajigas Resume.pdf" target="_blank">
                             <div className="text-secondary font-semibold">My Resume</div>
                             <FontAwesomeIcon icon={faDownload} className="text-secondary"></FontAwesomeIcon>
                         </a>
                     </button>
 
-
-                    <div className="flex gap-x-[3rem]">
+                    <div className="flex gap-x-[3rem] mobile:hidden">
                         <NavItem text="About" page=""></NavItem>
                         <NavItem text="Contact" page=""></NavItem>
+                    </div>
+
+                    <div className="hidden mobile:flex gap-x-[3rem] text-[1.5rem]">
+                        <FontAwesomeIcon icon={faUser} className="cursor-pointer"></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faMessage} className="cursor-pointer"></FontAwesomeIcon>
                     </div>
                 </ul>
 
                 <div className="w-[60rem] tablet-s:w-[100%] h-[3.5rem] absolute bg-accent top-[.7rem] tablet-s:top-[.5rem] 
-                right-0 left-0 rounded-[3rem] z-[-1] tablet-s:rounded-t-none"></div>
+                right-0 left-0 rounded-[3rem] z-[-1] tablet-s:rounded-t-none mobile:hidden"></div>
 
             </nav>
             )}

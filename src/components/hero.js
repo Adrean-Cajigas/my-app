@@ -7,6 +7,7 @@ export default function Hero( { title, header, animationClass } ) {
     const [leftTagsStyle, setLeftTagsStyle] = useState({});
     const [rightTagsStyle, setRightTagsStyle] = useState({});
     const [isMobile, setIsMobile] = useState(false);
+    const [screenWidth, setScreenWidth] = useState(0);
 
     useEffect(() => {
         const handleResize = () => {
@@ -17,8 +18,22 @@ export default function Hero( { title, header, animationClass } ) {
         return () => window.removeEventListener("resize", handleResize);
       }, []);
 
+
+      useEffect(() => {
+        const handleResize = () => {
+            setScreenWidth(window.innerWidth);
+        };
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     useEffect(() => {
         const handleScroll = () => {
+
+            if (screenWidth <= 768) {
+                return;
+            }
+            
             const position = window.scrollY;
             const maxFontSize = 10; 
             const maxLineHeight = 11;
@@ -58,18 +73,18 @@ export default function Hero( { title, header, animationClass } ) {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [isMobile]);
 
 
     function Adrean() {
         return(
             <h1 style={scrollStyle} className="text-accent opacity-20 font-thick text-[7rem] text-center 
-            leading-[7rem] tracking-wide select-none z-[-1] tablet-s:text-[4.5rem]">Adrean Cajigas</h1>
+            leading-[7rem] tracking-wide select-none z-[-1] tablet-s:text-[4.5rem] tablet-s:leading-[6rem]">Adrean Cajigas</h1>
         )}
 
     return(
         <section className="relative container mx-auto">
-            <h3 className="text-secondary font-bold text-[2.5rem] text-center pt-[8rem] tablet-s:pt-[6rem] tablet-s:text-[2rem]">{header}</h3>
+            <h3 className="text-secondary font-bold text-[2.5rem] text-center pt-[8rem] tablet-s:pt-[6rem] mobile:pt-[7rem] tablet-s:text-[2rem]">{header}</h3>
             <h1 className={`text-primary font-thick text-[7rem] tablet-s:text-[4.5rem] text-center leading-[7rem] tablet-s:leading-[5rem] tracking-wide ${animationClass}`}>{title}</h1>
 
             <div className='z-[-1]'>
@@ -93,7 +108,7 @@ export default function Hero( { title, header, animationClass } ) {
             </div>
 
 
-            <div className="absolute w-[85%] tablet:w-[80%] right-0 left-0 bottom-5 laptop-s:bottom-[5rem] mx-auto">
+            <div className="absolute w-[85%] tablet:w-[80%] right-0 left-0 bottom-5 laptop-s:bottom-[5rem] mx-auto tablet-s:hidden">
                 <div className="flex flex-col gap-y-[3rem]">
                     <div className="flex justify-between w-full text-secondary font-semibold text-[1.5rem] text-center">
                         <p style={leftTagsStyle}>Website<br></br>Developer</p>

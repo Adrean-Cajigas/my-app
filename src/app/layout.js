@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     tablet:text-[1.2vw]
     tablet-s:text-[1rem]
     mobile:text-[.85rem]
-    mobile-s:text-[.7rem]
+    mobile-s:text-[.8rem]
     ">
       <body className={inter.className}>{children}</body>
     </html>

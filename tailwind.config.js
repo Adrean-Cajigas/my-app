@@ -20,8 +20,8 @@ module.exports = {
       'laptop-s': {'max': '1250px'},      // 1024px up to 1250px
       'tablet': {'max': '1024px'},        // 768px up to 1024px
       'tablet-s': {'max': '768px'},       // 480px up to 768px
-      'mobile': {'max': '480px'},         // 340px up to 480px
-      'mobile-s': {'max': '340px'},       // 0px up to 340px
+      'mobile': {'max': '650px'},         // 340px up to 480px
+      'mobile-s': {'max': '480px'},       // 0px up to 340px
     },
 
 

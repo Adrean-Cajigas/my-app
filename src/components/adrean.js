@@ -8,7 +8,8 @@ const imageDetails = [
           src="/images/adrean1.png"
           width={500}
           height={500}
-          className="absolute bottom-0 w-[28rem] mx-auto right-0 left-0 select-none"
+          className="absolute bottom-0 w-[28rem] mx-auto right-0 left-0 select-none tablet-s:w-[23rem]"
+          alt="Adrean Cajigas"
         />
       ),
       title: "Adrean Cajigas",
@@ -22,7 +23,8 @@ const imageDetails = [
           src="/images/adrean4.png"
           width={500}
           height={500}
-          className="absolute bottom-0 w-[26rem] mx-auto right-10 left-0 select-none"
+          className="absolute bottom-0 w-[26rem] mx-auto right-10 left-0 select-none tablet-s:w-[21rem]"
+          alt="Adrean Cajigas"
         />
       ),
       title: "College Student",
@@ -36,7 +38,8 @@ const imageDetails = [
           src="/images/adrean6.png"
           width={500}
           height={500}
-          className="absolute bottom-0 w-[20.5rem] mx-auto right-0 left-0 select-none"
+          className="absolute bottom-0 w-[20.5rem] mx-auto right-0 left-0 select-none tablet-s:w-[17rem]"
+          alt="Adrean Cajigas"
         />
       ),
       title: "Web Developer",
@@ -50,7 +53,8 @@ const imageDetails = [
           src="/images/adrean8.png"
           width={500}
           height={500}
-          className="absolute bottom-0 w-[35rem] mx-auto right-0 left-0 select-none"
+          className="absolute bottom-0 w-[35rem] mx-auto right-0 left-0 select-none tablet-s:w-[29rem]"
+          alt="Adrean Cajigas"
         />
       ),
       title: "Martial Artist",
