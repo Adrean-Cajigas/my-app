@@ -7,7 +7,7 @@ export default function Footer() {
         <footer className="bg-primary rounded-t-[2rem] px-[7rem] py-[4rem] tablet-s:px-[2rem] mobile-s:px-[1rem] tablet-s:py-[3rem] text-background">
             <div className="container mx-auto flex justify-between items-center mobile:flex-col">
                 <div className="flex flex-col gap-y-[1rem] tablet-s:gap-y-[1.8rem] mobile:items-center mobile:gap-y-[1rem]">
-                    <p className="font-bold text-[2.5rem] tablet-s:text-[1.5rem] tracking-wider text-center">Making Today's Dreams <br className="mobile:hidden"></br>Tomorrow's Possibilities</p>
+                    <p className="font-bold text-[2.5rem] tablet-s:text-[1.5rem] tracking-wider text-center">{`Making Today's Dreams`} <br className="mobile:hidden"></br>{`Tomorrow's Possibilities`}</p>
                     <p className="tablet-s:text-[.9rem]">- Grand Master H.U. Lee</p>
                 </div>
                 <div className="flex flex-col items-end pt-[1.5rem] mobile:flex-row mobile-s:flex-col mobile:justify-center mobile:items-center mobile:gap-10 mobile-s:gap-4">
